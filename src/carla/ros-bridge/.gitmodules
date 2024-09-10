@@ -1,0 +1,4 @@
+[submodule "carla_msgs"]
+	path = carla_msgs
+	url = https://github.com/TUMFTM/ros-carla-msgs
+	branch = master
