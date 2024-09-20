@@ -76,7 +76,7 @@ class Camera(Sensor):
 
         self.camera_info_publisher = node.new_publisher(CameraInfo, self.get_topic_prefix() +
                                                         '/camera_info', qos_profile=10)
-        self.camera_image_publisher = node.new_publisher(Image, self.get_topic_prefix(), qos_profile=qos.qos_profile_sensor_data)
+        self.camera_image_publisher = node.new_publisher(Image, self.get_topic_prefix(), qos_profile=10)
         
         self._frame_id = frame_id
 

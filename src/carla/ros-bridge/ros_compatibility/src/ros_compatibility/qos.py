@@ -15,6 +15,11 @@ class DurabilityPolicy(enum.Enum):
     TRANSIENT_LOCAL = 1
     VOLATILE = 2
 
+# class ReliabilityPolicy(enum.Enum):
+#     BEST_EFFORT = 1
+#     RELIABLE = 2
+
+
 
 class QoSProfile(object):
     def __init__(self, depth, durability=DurabilityPolicy.VOLATILE):
@@ -23,3 +28,6 @@ class QoSProfile(object):
 
     def is_latched(self):
         return self.durability == DurabilityPolicy.TRANSIENT_LOCAL
+    
+    # def is_best_effort(self):
+    #     return self.reliability == ReliabilityPolicy.BEST_EFFORT

@@ -12,7 +12,7 @@ def generate_launch_description():
                          'camera_frame': 'ego_vehicle/CAM_BACK'}],
             remappings=[
                 ('/lidar_points', '/carla/ego_vehicle/LIDAR_TOP'),
-                ('/camera_image', '/carla/ego_vehicle/CAM_BACK/image'),
+                ('/camera_image', '/carla/ego_vehicle/CAM_BACK'),
                 ('/camera_info', '/carla/ego_vehicle/CAM_BACK/camera_info')
             ]
         ),
